@@ -46,6 +46,7 @@ set expandtab
 
 nnoremap <silent> <C-p> :Files<cr>
 nnoremap <silent> <C-n> :NERDTreeToggle<cr>
+nnoremap <silent> <F6>  :let &bg=(&bg=='light'?'dark':'light')<cr>
 
 set undodir=~/.vim/.undo/
 set backupdir=~/.vim/.backup/

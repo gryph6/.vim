@@ -1,7 +1,10 @@
 "gvim only
 if has('gui_running')
     "no toolbar
-    set guioptions-=T  
+    set guioptions-=T
+
+    "no menu bar
+    set guioptions-=m 
 endif
 
 let g:asyncomplete_auto_popup = 1
@@ -30,3 +33,4 @@ nnoremap <silent> <C-n> :NERDTreeToggle<cr>
 set undodir=~/.vim/.undo/
 set backupdir=~/.vim/.backup/
 set directory=~/.vim/.swp/
+

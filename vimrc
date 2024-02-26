@@ -5,14 +5,14 @@ if has('gui_running')
     set guioptions-=m 
     set guioptions-=r
     set guioptions-=L
+
+    colorscheme gruvbox
 endif
 
 if has("autocmd")
   " Enable file type indent detection.
   filetype plugin indent on
 endif
-
-colorscheme gruvbox
 
 let g:asyncomplete_auto_popup = 1
 

@@ -14,11 +14,6 @@ if has("autocmd")
   filetype plugin indent on
 endif
 
-let g:asyncomplete_auto_popup = 1
-
-"enable airline tabline
-let g:airline#extensions#tabline#enabled = 1
-
 set clipboard=unnamed
 
 "enable mouse

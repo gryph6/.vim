@@ -5,6 +5,8 @@ if has('gui_running')
     set guioptions-=r "no right scrollbar
     set guioptions-=L "no left scrollbar
 
+    set lines=60 columns=200 "default window size
+
     colorscheme gruvbox
 endif
 
@@ -30,8 +32,9 @@ set expandtab                    "spaces instead of tabs
 
 "remaps
 nnoremap <silent> <C-p> :Files<cr>
+nnoremap <silent> <C-J> :Rg<cr>
 nnoremap <silent> <C-n> :NERDTreeToggle<cr>
-nnoremap <silent> <F6>  :let &bg=(&bg=='light'?'dark':'light')<cr>
+nnoremap <silent> <C-h> :TagbarToggle<cr>
 
 "working directories
 set undodir=~/.vim/.undo/
